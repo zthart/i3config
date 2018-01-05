@@ -220,8 +220,8 @@ exec --no-startup-id i3-msg 'workspace $WS0; exec gnome-terminal'
 #######################################
 # Airblader's i3-gaps
 #######################################
-gaps inner 7
-gaps outer 3
+gaps inner 10
+gaps outer 5
 
 #######################################
 # Audio Control
