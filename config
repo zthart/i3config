@@ -33,7 +33,7 @@ bindsym $mod+l exec --no-startup-id lock
 
 #Autolock Config and Toggle
 exec --no-startup-id xautolock -time 3 -locker lock
-bindsym $mod+Shift+l exec --no-startup-id "if [ $(cat ~/.config/i3/screenlock) -eq 0 ]; then echo '1' > ~/.config/i3/screenlock; /usr/bin/xautolock -enable; else echo '0' > ~/.config/i3/screenlock; /usr/bin/xautolock -disable; fi 
+bindsym $mod+Shift+l exec --no-startup-id "if [ $(cat ~/.config/i3/screenlock) -eq 0 ]; then echo '1' > ~/.config/i3/screenlock; /usr/bin/xautolock -enable; i3-nagbar -t warning -m 'xautolock enabled'; else echo '0' > ~/.config/i3/screenlock; /usr/bin/xautolock -disable; i3-nagbar -t warning -m 'xautolock disabled'; fi"
 #######################################
 # Window Focus and Movement
 #######################################
