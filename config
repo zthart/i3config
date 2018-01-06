@@ -25,7 +25,13 @@ bindsym $mod+Shift+q kill
 bindsym $mod+d exec dmenu_run
 bindsym $mod+Shift+d exec --no-startup-id i3-dmenu-desktop
 
+
+#######################################
+# Screen Locking
+#######################################
 bindsym $mod+l exec --no-startup-id lock
+#Autolock
+exec --no-startup-id xautolock -time 3 -locker lock
 
 #######################################
 # Window Focus and Movement
