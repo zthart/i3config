@@ -30,9 +30,10 @@ bindsym $mod+Shift+d exec --no-startup-id i3-dmenu-desktop
 # Screen Locking
 #######################################
 bindsym $mod+l exec --no-startup-id lock
-#Autolock
-exec --no-startup-id xautolock -time 3 -locker lock
 
+#Autolock Config and Toggle
+exec --no-startup-id xautolock -time 3 -locker lock
+bindsym $mod+Shift+l exec --no-startup-id "if [ $(cat ~/.config/i3/screenlock) -eq 0 ]; then echo '1' > ~/.config/i3/screenlock; /usr/bin/xautolock -enable; else echo '0' > ~/.config/i3/screenlock; /usr/bin/xautolock -disable; fi 
 #######################################
 # Window Focus and Movement
 #######################################
