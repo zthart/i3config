@@ -204,11 +204,6 @@ bar {
 	font xft: Terminus 9
 }
 
-#######################################
-# Compton
-#######################################
-#Start compton for window composting
-exec --no-startup-id compton -CGb --backend glx --vsync opengl
 
 #######################################
 # Wallpaper
@@ -216,6 +211,14 @@ exec --no-startup-id compton -CGb --backend glx --vsync opengl
 #Start feh for our background, start a shell in our 'shell workspace'
 exec --no-startup-id feh --bg-fill ~/Pictures/wallpaper.jpg
 exec --no-startup-id i3-msg 'workspace $WS0; exec gnome-terminal'
+
+#######################################
+# Display
+#######################################
+#Start compton for window composting
+exec --no-startup-id compton -CGb --backend glx --vsync opengl
+#Start display-visor (https://github.com/beanaroo/display-visor) for multiple display handling
+exec --no-startup-id display-visor -f -l
 
 #######################################
 # Airblader's i3-gaps
