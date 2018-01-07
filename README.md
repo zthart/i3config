@@ -8,5 +8,4 @@ Feel free to use my shit, if you want. Initial i3-gaps/compton set up borrowed f
 you can find his configs [here](https://github.com/bownairo/yoga900i3).
 
 ## How does she look?
-
- Whomst the fuck knows?
+![scrot.png](https://user-images.githubusercontent.com/4873335/34645283-c207501e-f30e-11e7-8390-7cea0522de76.png)
