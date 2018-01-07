@@ -34,9 +34,12 @@ $ cd ~/.config
 $ git clone https://github.com/zthart/i3config.git i3
 $ mkdir i3status
 $ ln -s ~/.config/i3/i3status.conf ~/.config/i3status/config
+$ sudo ln -s ~/.config/i3/lock /usr/bin/lock
 ```
 
-This assumes that both the `i3` and `i3status` directories have not yet been created in the `~/.config` directory
+This assumes that both the `i3` and `i3status` directories have not yet been created in the `~/.config` directory.
+The last line creates a symlink of the lock script in `/usr/bin` so that you don't have to add the `~/.config/i3` directory
+to your `PATH`.
 
 ## How does she look?
 ![scrot.png](https://user-images.githubusercontent.com/4873335/34645283-c207501e-f30e-11e7-8390-7cea0522de76.png)
