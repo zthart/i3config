@@ -1,7 +1,9 @@
 #######################################
 # i3 General Options
 #######################################
+# Uncomment to use the super (windows) key as the modifier
 #set $mod Mod4
+# Uncomment to use the left alt key as the modifier
 set $mod Mod1
 
 # Font for window titles. Will also be used by the bar unless a different font
