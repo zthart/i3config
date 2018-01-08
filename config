@@ -61,10 +61,8 @@ bindsym $mod+v split v
 # enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
 
-# change container layout (stacked, tabbed, toggle split)
+# stacked container layout
 bindsym $mod+s layout stacking
-bindsym $mod+w layout tabbed
-bindsym $mod+e layout toggle split
 
 # toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
@@ -73,7 +71,7 @@ bindsym $mod+Shift+space floating toggle
 bindsym $mod+space focus mode_toggle
 
 # focus the parent container
-bindsym $mod+a focus parent
+#bindsym $mod+a focus parent
 
 # focus the child container
 #bindsym $mod+d focus child
@@ -241,3 +239,15 @@ gaps outer 5
 bindsym XF86AudioRaiseVolume exec --no-startup-id "pactl set-sink-mute 0 false ; pactl set-sink-volume 0 +5%"
 bindsym XF86AudioLowerVolume exec --no-startup-id "pactl set-sink-mite 0 false ; pactl set-sink-volume 0 -5%"
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle
+
+######################################
+# ThinkPad Layout Management
+######################################
+bindsym XF86Explorer layout toggle split
+bindsym XF86LaunchA layout tabbed
+
+######################################
+# ThinkPad Screen Brightness Control
+######################################
+bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 5
+bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 5
