@@ -251,3 +251,14 @@ bindsym XF86LaunchA layout tabbed
 ######################################
 bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 5
 bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 5
+
+######################################
+# Memes
+######################################
+set $ayylmao "👌"
+bindsym $mod+Shift+Escape mode $ayylmao
+
+mode $ayylmao {
+	bindsym Returm mode "default"
+	bindsym Escape mode "default"
+}
