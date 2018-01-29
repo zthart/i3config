@@ -262,3 +262,8 @@ mode $ayylmao {
 	bindsym Returm mode "default"
 	bindsym Escape mode "default"
 }
+
+######################################
+# NetworkManager
+######################################
+exec --no-startup-id nm-applet --no-agent
